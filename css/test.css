@@ -44,16 +44,18 @@ header div div a {
 
 main {
     display: flex;
-    height: 750px;
+    width: 100%;
 }
 
 main aside {
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; 
 }
+
 main article {
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 10;
+    flex-grow: 8;
 }
 
 #left {
@@ -61,13 +63,10 @@ main article {
 }
 
 main article div {
-    flex: 1 0 300px;    
-    border: 1px dashed whitesmoke;
-    background-color: #1d1d1d;
+    background-color: #111111;
     color: whitesmoke;
-    max-width: 575px;
+    transition: 0.2;
 }
-
 
 #right {
     background-color: rgb(160, 73, 242);
