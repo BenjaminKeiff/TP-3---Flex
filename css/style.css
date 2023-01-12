@@ -83,18 +83,19 @@ section {
     flex-wrap: wrap;
     flex-grow: 10;
     background-color: blueviolet;
-    flex-direction: row;
 }
 
 section article {
-    flex: 1 0 200px;
+    flex: 10 0 200px;
     border: 1px dashed whitesmoke; 
 }
 
 aside {
     background-color: aqua;
-    flex: 2 0 250px;
+    flex: 2 0 auto;
     color: black;
-    /* flex-basis: 250px */
 }
 
+#aside2 {
+    background-color: rgb(253, 127, 255);
+}
