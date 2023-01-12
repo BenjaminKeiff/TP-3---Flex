@@ -1,94 +1,100 @@
 body {
-    background-color: rgb(237, 237, 237);
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin: 0;
+}
+
+/* ############################################## */
+/* ################## HEADER #################### */
+/* ############################################## */
+
+header h1 {
+    padding: 20px;
 }
 
 header {
-    background-color: orangered;
-}
-
-header h1 {
-    margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-header h2 {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-}
-
-.box {
-    flex-grow: 1;
-    border: 1px solid #111111;
+    align-items: center;
     text-align: center;
+    background-color: rgb(247, 65, 65);
 }
 
-header div div a {
-    text-decoration: none;
-    color: whitesmoke;
+/* ############################################## */
+/* ################### NAV ##################### */
+/* ############################################## */
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+    text-align: center;
+    padding: 0;
+    flex-grow: 1;
 }
+
+nav ul li  {
+    background-color: rgb(247, 65, 65);
+    justify-content: center;
+    flex: 1 0 auto;
+    border: 1px solid black;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    /* align-content: stretch; */
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+/* ############################################## */
+/* ################## FOOTER #################### */
+/* ############################################## */
+
+footer {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ############################################## */
+/* ################### MAIN ##################### */
+/* ############################################## */
 
 main {
+    height: 100vh;
+    color: whitesmoke;
     display: flex;
-    height: 750px;
 }
 
-main aside {
-    flex-grow: 2;
-}
-main article {
+section {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 10;
+    background-color: blueviolet;
+    flex-direction: row;
 }
 
-#left {
-    background-color: rgb(95, 253, 253);
+section article {
+    flex: 1 0 200px;
+    border: 1px dashed whitesmoke; 
 }
 
-main article div {
-    flex: 1 0 300px;    
-    border: 1px dashed whitesmoke;
-    background-color: #1d1d1d;
-    color: whitesmoke;
-    max-width: 575px;
-}
-
-
-#right {
-    background-color: rgb(160, 73, 242);
-}
-
-h1 {
-    font-size: 45px;
-    font-weight: bolder;
-    text-transform: uppercase;
-
-}
-footer {
-    background-color: blue;
-    margin: auto;
-}
-
-footer h2 {
-    margin: auto;
-    padding: 15px 0;
-    text-align: center;
-    background-color: blue;
-    color: white;
+aside {
+    background-color: aqua;
+    flex: 2 0 250px;
+    color: black;
+    /* flex-basis: 250px */
 }
 
